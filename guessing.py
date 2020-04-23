@@ -37,15 +37,13 @@ def check_guess():
                 else:
                     plural = " "
                 # Print number of remaining tries
-                print("That was wrong. You have {} guess{} left".format(tries,plural))
+                print("That was wrong. You have {} guess{} left".format(tries, plural))
             else:
                 print("GAME OVER!")
                 # Restart or end game as user pleases
     play_again = input("Would you like to Play again? (Y)es or (N)o     ").upper()
     if play_again == "Y":
-        create_guess()
         check_guess()
 
 
-create_guess()
 check_guess()
