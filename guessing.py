@@ -23,7 +23,6 @@ def check_guess():
     correct_guess, tries = create_guess()
     while tries > 0:
         # Accept user input
-        print(correct_guess)
         user_guess = int(input("Guess a number   "))
         if user_guess == correct_guess:
             print("You got it right , awesome! ")
